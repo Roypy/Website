@@ -18,9 +18,8 @@ body {
 }
 
 .hero {
-  display: flex;
   .subcontainer {
-    background-color: red;
+    background-color: orange;
     color: white;
     .header-container {
       display: flex;
@@ -40,5 +39,15 @@ body {
   .header-container {
     display: block;
     background-color: indigo;
+  }
+
+  .navbar {
+    text-align: center;
+    .primary-nav-buttons {
+      color: white;
+      display: inline;
+      background-color: lightcoral;
+      text-align: center;
+    }
   }
 }
