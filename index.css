@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap");
 * a {
   text-decoration: none;
 }
@@ -18,7 +22,7 @@ body {
 
 header {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,11 +30,11 @@ header {
   margin: 0;
   font-size: 22px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #4c5053;
 }
 
@@ -59,14 +63,28 @@ header nav .navlinks li a {
 
 header nav .navlinks li a:hover {
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(14, 0drgb), color-stop(13), color-stop(ffe5, 11), color-stop(50%, rgba(0, 255, 229, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(14, 0drgb),
+    color-stop(13),
+    color-stop(ffe5, 11),
+    color-stop(50%, rgba(0, 255, 229, 0))
+  );
   background: linear-gradient(0drgb 14, 13, 11 ffe5, rgba(0, 255, 229, 0) 50%);
   background-color: rgba(0, 0, 0, 0);
   background-position-x: 0%;
   background-position-y: 0%;
   background-repeat: repeat;
   background-attachment: scroll;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#00ffe5), color-stop(50%, rgba(0, 255, 229, 0)));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#00ffe5),
+    color-stop(50%, rgba(0, 255, 229, 0))
+  );
   background-image: linear-gradient(0deg, #00ffe5, rgba(0, 255, 229, 0) 50%);
   background-size: auto;
   background-origin: padding-box;
@@ -78,10 +96,10 @@ header .right-buttons-navbar {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 header .right-buttons-navbar #buy-now-button {
@@ -89,6 +107,12 @@ header .right-buttons-navbar #buy-now-button {
   background-color: #00ffe5;
   padding: 5px;
   margin-right: 15px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+header .right-buttons-navbar #buy-now-button:hover {
+  background-color: white;
 }
 
 header .right-buttons-navbar .material-symbols-outlined {
@@ -97,13 +121,12 @@ header .right-buttons-navbar .material-symbols-outlined {
 
 .hero {
   background-color: royalblue;
-  height: 50vh;
 }
 
 @media only screen and (max-width: 1299px) {
   header {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -111,11 +134,11 @@ header .right-buttons-navbar .material-symbols-outlined {
     margin: 0;
     font-size: 22px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     background-color: #4c5053;
   }
   header #r6-nav-logo {
@@ -143,14 +166,33 @@ header .right-buttons-navbar .material-symbols-outlined {
   }
   header nav .navlinks li a:hover {
     position: relative;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(14, 0drgb), color-stop(13), color-stop(ffe5, 11), color-stop(50%, rgba(0, 255, 229, 0)));
-    background: linear-gradient(0drgb 14, 13, 11 ffe5, rgba(0, 255, 229, 0) 50%);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(14, 0drgb),
+      color-stop(13),
+      color-stop(ffe5, 11),
+      color-stop(50%, rgba(0, 255, 229, 0))
+    );
+    background: linear-gradient(
+      0drgb 14,
+      13,
+      11 ffe5,
+      rgba(0, 255, 229, 0) 50%
+    );
     background-color: rgba(0, 0, 0, 0);
     background-position-x: 0%;
     background-position-y: 0%;
     background-repeat: repeat;
     background-attachment: scroll;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#00ffe5), color-stop(50%, rgba(0, 255, 229, 0)));
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#00ffe5),
+      color-stop(50%, rgba(0, 255, 229, 0))
+    );
     background-image: linear-gradient(0deg, #00ffe5, rgba(0, 255, 229, 0) 50%);
     background-size: auto;
     background-origin: padding-box;
@@ -161,13 +203,13 @@ header .right-buttons-navbar .material-symbols-outlined {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   header .right-buttons-navbar #buy-now-button {
     color: black;
@@ -189,6 +231,33 @@ header .right-buttons-navbar .material-symbols-outlined {
   }
   header .right-buttons-navbar .material-symbols-outlined:hover {
     color: cyan;
+  }
+  .hero {
+    background-color: royalblue;
+  }
+  .hero .video-container {
+    display: inline-block;
+  }
+  .hero .video-container .looping-video {
+    -o-object-fit: cover;
+    object-fit: cover;
+    vertical-align: middle;
+    max-width: 160%;
+  }
+  .latest-update {
+    background-color: #b4b8bc;
+    height: 50%;
+  }
+  .latest-update .latest-container .latest-info-box {
+    padding: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 0;
+    color: black;
+  }
+  .latest-update .latest-container .latest-info-box h2 {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=index.css.map */
