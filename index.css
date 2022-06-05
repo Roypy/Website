@@ -1,52 +1,194 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  background-color: #20222a;
-  background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  margin-bottom: 2000px;
-}
-
-.navbar .primary-nav-buttons {
+  font-weight: bold;
   color: white;
-  background-color: lightcoral;
+  background-color: #2a2929;
+  margin: 0;
+  height: 100%;
 }
 
-.hero .subcontainer {
-  background-color: orange;
-  color: white;
-}
-
-.hero .subcontainer .header-container {
+header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  font-size: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #4c5053;
 }
 
-.hero .subcontainer .header-container h1 {
+header #r6-nav-logo {
+  padding-left: 10px;
+  height: auto;
+  width: auto;
+  float: left;
+}
+
+header nav .navlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+header nav .navlinks li a {
+  text-transform: uppercase;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+header nav .navlinks li a:hover {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(14, 0drgb), color-stop(13), color-stop(ffe5, 11), color-stop(50%, rgba(0, 255, 229, 0)));
+  background: linear-gradient(0drgb 14, 13, 11 ffe5, rgba(0, 255, 229, 0) 50%);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00ffe5), color-stop(50%, rgba(0, 255, 229, 0)));
+  background-image: linear-gradient(0deg, #00ffe5, rgba(0, 255, 229, 0) 50%);
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+header .right-buttons-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+header .right-buttons-navbar #buy-now-button {
   color: black;
-  background-color: aquamarine;
+  background-color: #00ffe5;
+  padding: 5px;
+  margin-right: 15px;
 }
 
-.hero .subcontainer .header-container h5 {
-  background-color: aquamarine;
+header .right-buttons-navbar .material-symbols-outlined {
+  display: none;
 }
 
-@media screen and (min-width: 810px) {
-  .header-container {
-    display: block;
-    background-color: indigo;
+.hero {
+  background-color: royalblue;
+  height: 50vh;
+}
+
+@media only screen and (max-width: 1299px) {
+  header {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    font-size: 22px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #4c5053;
   }
-  .navbar {
-    text-align: center;
+  header #r6-nav-logo {
+    padding-left: 10px;
+    height: auto;
+    width: auto;
+    float: left;
   }
-  .navbar .primary-nav-buttons {
+  header nav .navlinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+  }
+  header nav .navlinks li {
+    display: none;
+  }
+  header nav .navlinks li a {
+    text-transform: uppercase;
+    padding: 15px;
+    text-decoration: none;
     color: white;
-    display: inline;
-    background-color: lightcoral;
-    text-align: center;
+    position: relative;
+  }
+  header nav .navlinks li a:hover {
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(14, 0drgb), color-stop(13), color-stop(ffe5, 11), color-stop(50%, rgba(0, 255, 229, 0)));
+    background: linear-gradient(0drgb 14, 13, 11 ffe5, rgba(0, 255, 229, 0) 50%);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#00ffe5), color-stop(50%, rgba(0, 255, 229, 0)));
+    background-image: linear-gradient(0deg, #00ffe5, rgba(0, 255, 229, 0) 50%);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+  }
+  header .right-buttons-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .right-buttons-navbar #buy-now-button {
+    color: black;
+    background-color: #00ffe5;
+    padding: 5px;
+    font-size: 20px;
+    margin: 10px;
+    white-space: nowrap;
+  }
+  header .right-buttons-navbar .material-symbols-outlined {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    padding-left: 6px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 40px;
+  }
+  header .right-buttons-navbar .material-symbols-outlined:hover {
+    color: cyan;
   }
 }
 /*# sourceMappingURL=index.css.map */
